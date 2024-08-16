@@ -1,0 +1,51 @@
+import os
+import time
+
+"""   
+try:
+    import webbrowser
+    webbrowser.open("")
+except ModuleNotFoundError:
+    os.system("pip install pycopy-webbrowser")
+    import webbrowser
+    webbrowser.open("")
+"""
+print("Checking if you not install all the modules")
+
+time.sleep(2)
+try:
+    from os import environ
+    environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
+    import pygame
+    print("Pygame: Installed")
+except ModuleNotFoundError:
+    os.system("pip install pygame")
+
+time.sleep(2)
+
+try:
+    import turtle
+    print("Turtle: Installed")
+except ModuleNotFoundError:
+    os.system("pip install PythonTurtle")
+
+time.sleep(2)
+
+try:
+    import tkinter
+    print("Tkinter: Installed")
+except ModuleNotFoundError:
+    os.system("pip install Tkinter")
+
+try:
+    import tkinter
+    import turtle
+    import pygame
+    print("Everything is install successfully!")
+except ModuleNotFoundError:
+    print("Some of these moudle is not install")
+    os.system("pip install pygame")
+    os.system("pip install PythonTurtle")
+    os.system("pip install Tkinter")
+os.system("Pause")
+    
