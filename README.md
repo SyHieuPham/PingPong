@@ -36,9 +36,34 @@
 </p>
 </section>
 
-<style>
-  section{
-    background: grey;
-    color: white;
-  }
-</style>
+<section>
+<h2>This code is present for setting</h2>
+  <p>
+<br>
+    def Setting_func():<br>
+    global MainMenu, Fr1<br>
+    global Shape<br>
+    global Fr2<br>
+<br>
+    Fr1.destroy()<br>
+<br>    
+<br>    
+    Fr2 = tk.Frame(MainMenu, width= 500, height= 500)<br>
+    Fr2.pack()v
+    Fr2.pack_propagate(0)<br>
+<br>  
+    select_shape = tk.StringVar()<br>
+<br>
+<br>
+    print(select_shape.get())<br>
+<br>
+    Ball_shape_label = tk.Label(Fr2, text= "Ball shapes", font=("ROBOTO", 16))<br>
+    Ball_shape_label.pack()<br>
+<br>
+    select_shape.set("circle")<br>
+ <br>   
+<br>
+    Ball_shape = ttk.Combobox(Fr2, values= ["square", "circle"], font= ("ROBOTO", 16), textvariable= select_shape)<br>
+    Ball_shape.pack()<br>
+  </p>
+</section>
