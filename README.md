@@ -9,12 +9,12 @@
 <h2>This code is present for menu</h2>
 <section>
 <p>2.	def main_menu():<br>
-3.	    global MainMenu<br>
-4.	<br>
-5.	    MainMenu = tk.Tk()<br>
-6.	    MainMenu.title("PING PONG")<br>
-7.	    MainMenu.geometry("500x500")<br>
-8.	    MainMenu.resizable(0, 0)<br>
+global MainMenu<br>
+<br>
+	    MainMenu = tk.Tk()<br>
+	    MainMenu.title("PING PONG")<br>
+      MainMenu.geometry("500x500")<br>
+	    MainMenu.resizable(0, 0)<br>
 9.	<br>
 10.	    global Fr1
 11.	    Fr1 = tk.Frame(MainMenu, width= 500, height= 500)
