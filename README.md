@@ -35,3 +35,10 @@
 26.	    MainMenu.mainloop()<br>
 </p>
 </section>
+
+<style>
+  section{
+    background: grey;
+    color: white;
+  }
+</style>
